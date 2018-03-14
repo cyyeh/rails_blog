@@ -1,0 +1,13 @@
+= form_tag article_comments_path(@article) do 
+  %p
+    = label :comment, :commenter
+    %br
+    = text_field :comment, :commenter
+  
+  %p
+    = label :comment, :body
+    %br
+    = text_area :comment, :body
+  
+  %p
+    = submit_tag
